@@ -1,0 +1,24 @@
+html,
+body {
+    font-family: 'Libre Bodoni', sans-serif;
+    background-color: black;
+    color: white;
+}
+.login-container {
+    background-color: #000;
+    padding: 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+.login-text1 {
+    font-family: 'Karla', sans-serif;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

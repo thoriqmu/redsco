@@ -1,0 +1,540 @@
+body {
+  background-color: black;
+  scrollbar-width: none;
+}
+
+.banner {
+    height: 100vh;
+    width: auto;
+    background: url('img/img18.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-red {
+    color: #AD1412;
+}
+
+.background {
+  background: url('img/img1.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.parpum1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  /* Responsive Size */
+  @media (max-width: 575.98px) { /* <576px */
+    top: 14%;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) { /* >576px */
+    top: 15%;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) { /* >768px */
+    top: 20%;
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) { /* >992px */
+    top: 25%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1399.98px) { /* >1200px */
+    top: 30%;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  @media (min-width: 1400px) { /* >1400px */
+    top: 35%;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+.redsco {
+  position: absolute;
+  left: 50%;
+  font-family: 'Libre Bodoni', sans-serif;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%) scale(3.5);
+    /* Responsive Size */
+  @media (max-width: 575.98px) {
+    top: 16%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    top: 18%;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    top: 24%;
+    transform: translate(-50%, -50%) scale(2);
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    top: 30%;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    top: 35%;
+    transform: translate(-50%, -50%) scale(3);
+  }
+  @media (min-width: 1400px) {
+    top: 42%;
+    transform: translate(-50%, -50%) scale(3.5);
+  }
+}
+
+.deskrip {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  font-family: 'Kalra', sans-serif;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+  color: white;
+  transform: translate(-50%, -10%) scale(1);
+    /* Responsive Size */
+  @media (max-width: 575.98px) {
+    top: 19%;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    top: 23%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    top: 30%;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    top: 37%;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    top: 45%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  @media (min-width: 1400px) {
+    top: 54%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.order {
+  position: absolute;
+  background-color: #AD1412; /* Warna latar belakang seperti tombol */
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  padding: 15px 35px;
+  top: 60%;
+  left: 49.5%;
+  font-family: 'Kalra', sans-serif;
+  font-size: 25px;
+    /* Responsive Size */
+  @media (max-width: 575.98px) {
+    top: 21%;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    top: 26%;
+    transform: translate(-50%, -50%) scale(0.45);
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    top: 33%;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    top: 41%;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  @media (min-width: 1400px) {
+    top: 60%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.order:hover {
+  color: black;
+}
+
+
+/* BAGIAN CAROUSEL */
+.carousel {
+  width: 100%; /* Atur lebar carousel */
+  height: 100%; /* Atur tinggi carousel */
+}
+
+.carousel-item {
+  position: relative;
+  transform: translate(-10%, -10%) scale(1);
+}
+
+.carousel-item img {
+  width: 100%; /* Atur lebar gambar */
+  height: auto; /* Tinggi gambar akan disesuaikan agar proporsi gambar tetap terjaga */
+}
+
+.layer1 {
+    position: absolute;
+    width: 600px !important;
+    top: 50%;
+    left: 50%;
+
+    @media (max-width: 575.98px) {
+        transform: translate(-50%, -50%) scale(0.35);
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        transform: translate(-50%, -50%) scale(0.35);
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        transform: translate(-50%, -50%) scale(0.65);
+      }
+
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+
+      @media (min-width: 1400px) {
+        transform: translate(-50%, -50%) scale(1);
+      }
+  }
+
+.layer2 {
+    position: absolute;
+    width: 200px !important;
+    top: 50%;
+    left: 50%;
+
+    @media (max-width: 575.98px) {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        transform: translate(-50%, -50%) scale(0.85);
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        transform: translate(-50%, -50%) scale(1.6);
+      }
+
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        transform: translate(-50%, -50%) scale(1.9);
+      }
+
+      @media (min-width: 1400px) {
+        transform: translate(-50%, -50%) scale(2.3);
+      }
+}
+
+.layer3 {
+  position: absolute;
+  font-size: xx-large;
+  top: 54%;
+  left: 50%;
+  font-family: 'Libre Bodoni', sans-serif;
+  @media (max-width: 575.98px) {
+    transform: translate(-50%, -50%) scale(2);
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    transform: translate(-50%, -50%) scale(2.2);
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    transform: translate(-50%, -50%) scale(3.4);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    transform: translate(-50%, -50%) scale(4.6);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    transform: translate(-50%, -50%) scale(5.5);
+  }
+
+  @media (min-width: 1400px) {
+    transform: translate(-50%, -50%) scale(6);
+  }
+}
+
+
+/* NOMOR PARPUM */
+.daftar {
+  position: absolute;
+  left: 20%;
+  font-family: 'Kalra', sans-serif;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+  color: white;
+  @media (max-width: 575.98px) {
+        transform: translate(-50%, -10%) scale(0.35);
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        top: 39%;
+        transform: translate(-50%, -10%) scale(0.35);
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        top: 39%;
+        transform: translate(-50%, -10%) scale(0.5);
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        top: 40%;
+        transform: translate(-50%, -10%) scale(0.65);
+      }
+
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        top: 40%;
+        transform: translate(-50%, -10%) scale(0.8);
+      }
+
+      @media (min-width: 1400px) {
+        top: 42%;
+        transform: translate(-50%, -10%) scale(1);
+      }
+}
+
+.daftar h4 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  line-height: 0;
+}
+
+.daftar h2 {
+  font-size: 70px;
+  margin: 0;
+}
+
+/* DESKRIPSI PARPUM */
+.deskripsi {
+    font-family: 'Kalra', sans-serif;
+    position: absolute;
+    top: 62%;
+    left: 5%;
+    width: 35%;
+    color: white;
+}
+
+.deskripsi h3 {
+  color: white;
+  margin-top: 2%;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  @media (max-width: 575.98px) {
+    font-size: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 12px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 15px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 25px;
+  }
+}
+
+.garis {
+  border-top: 8px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  @media (max-width: 575.98px) {
+    width: 120px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 160px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 200px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 240px;
+  }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    width: 270px;
+  }
+  @media (min-width: 1400px) {
+    width: 300px;
+  }
+}
+
+.garis2 {
+    border-top: 3px solid #AD1412;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+/* SECTION BAWAH */
+.container-relative {
+  position: relative; /* Mengatur kontainer sebagai posisi relatif */
+  width: 100%; /* Contoh lebar kontainer */
+  height: auto; /* Contoh tinggi kontainer */
+}
+
+.gambar {
+  position: absolute; /* Mengatur gambar sebagai posisi absolut */
+}
+
+.kuisioner {
+  position: absolute;
+  font-size: xx-large;
+  font-family: 'Libre Bodoni', sans-serif;
+  transform: translate(-10%, -10%) scale(3);
+}
+
+.deskrip3 {
+  position: absolute;
+  font-size: 29px;
+  font-family: 'karla', sans-serif;
+  color: white;
+}
+
+
+.redsco2 {
+  position: absolute;
+  font-family: 'Libre Bodoni', sans-serif;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  writing-mode: vertical-rl; /* Mengatur teks vertikal dari atas ke bawah (right to left) */
+  text-orientation: mixed; /* Mengatur orientasi teks campuran */
+  transform: rotate(180deg) scale(2.5); /* Memutar teks 180 derajat */
+  white-space: nowrap; /* Mencegah pemutusan kata */
+}
+
+.kuisioners {
+    position: absolute;
+    background-color: #AD1412; /* Warna latar belakang seperti tombol */
+    text-decoration: none;
+    color: white;
+    border-radius: 35px;
+    padding: 20px 60px;
+    top: 85%;
+    left: 80%;
+    font-family: 'Kalra', sans-serif;
+    font-size: 25px;
+      /* Responsive Size */
+    @media (max-width: 575.98px) {
+      transform: translate(-50%, -50%) scale(0.3);
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      transform: translate(-50%, -50%) scale(0.45);
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      transform: translate(-50%, -50%) scale(0.6);
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      transform: translate(-50%, -50%) scale(0.7);
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    @media (min-width: 1400px) {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+.carousel-control-prev {
+  height: 100%; /* Tinggi gambar akan disesuaikan agar proporsi gambar tetap terjaga */
+
+}
+
+.carousel-control-next {
+  height: 100%; /* Tinggi gambar akan disesuaikan agar proporsi gambar tetap terjaga */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    animation: fadeInDown 0.5s ease-out; /* Sesuaikan durasi animasi sesuai kebutuhan */
+}
+
+.navbar-dropdown {
+    animation: fadeInDropdown 0.2s ease-in;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.album .col {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
